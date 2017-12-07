@@ -1,0 +1,22 @@
+{
+  "name": "ALT & ARIA",
+  "description": "Get Alt, Aria and Meta info on click of this icon",
+  "version": "1.2",
+  "background": { "scripts": ["background.js"] },
+  "browser_action": {
+      "name": "Click to change the icon's color"
+  },
+  "manifest_version": 2,
+  "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+     "js": ["jquery-3.2.1.min.js","getAltAriaMeta.js"],
+       "css":["getAltAriaMeta.css"]
+  }
+]
+  
+}
+
+
